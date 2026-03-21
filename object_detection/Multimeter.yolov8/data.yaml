@@ -1,0 +1,16 @@
+# Replace ONLY the first 3 lines (train/val/test) with your actual paths, leave everything else as it is
+# Change backslashes to forward slashes in the paths. Example: D:\docs\folder  →  D:/docs/folder
+
+train: D:/docs/openCV/object_detection/Multimeter.yolov8/train/images
+val: D:/docs/openCV/object_detection/Multimeter.yolov8/train/images
+test: D:/docs/openCV/object_detection/Multimeter.yolov8/train/images
+
+nc: 1
+names: ['multimeter']
+
+roboflow:
+  workspace: fenils-workspace-fybhy
+  project: fenils-workspace-fybhy
+  version: dataset
+  license: Private
+  url: https://app.roboflow.com/fenils-workspace-fybhy/fenils-workspace-fybhy/dataset

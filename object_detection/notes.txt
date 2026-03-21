@@ -1,0 +1,27 @@
+run these commands to  intall the ultralytics:
+python -m venv env
+source env/Scripts/activate
+pip install ultralytics
+
+Run the script justyolo.py . Its a pre-trained model that detects objects from camera
+
+To train the model to  detect specific  object, train it using roboflow:
+1. GO  to  https://app.roboflow.com/ and create an  account
+2. Go to Projects > New project
+3. Add project name > Annotation group > Select Detection > Create Public project
+4. Go to  Upload data > Select images/video. If its a video, select 1FPS. Click on Save and Continue
+5. Go to Annotate > Annotate Images > Label Myself
+6. Select Smart Select option. Hover your mouse over the obect until whole object is highlighted and Click
+    Name the object
+7. Click on  Check button(Add images to  dataset)
+8. Go to Dataset > Export > Format = Yolov8 > Export as  ZIP
+
+9. Open the data.yaml file and edit the train, val and test line lie this(with forward slash)
+    train: D:/docs/openCV/object_detection/Multimeter.yolov8/train/images
+    val: D:/docs/openCV/object_detection/Multimeter.yolov8/train/images
+    test: D:/docs/openCV/object_detection/Multimeter.yolov8/train/images
+10. Run the train.py script(direct the data path to  data.yaml file)
+11. The train script will  create a file "best.pt". Search it and copy the  path. Paste that path in the 
+    script trained_multimeter.py and run it
+
+

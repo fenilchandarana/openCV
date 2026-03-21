@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=a99p_fAr6e4&list=PL0FM467k5KSyt5o3ro2fyQGt-6zRkHXRv
+Run the  following command before running the script
+python -m venv env
+source env/Scripts/activate
+pip install mediapipe==0.10.13 opencv-python numpy==1.26.4 pycaw comtypes protobuf==4.25.3 tensorflow==2.13.0
+
+for training the model, run this command
+pip install scikit-learn pandas seaborn ipykernel
+
+
+
+
+1. go to this file "keypoint_classifier_label.csv" and add the name of the gesture that you want to add
+2. consider the serial number starting from 0: 0,1,2,3,4. So if  there  are 4  gesture,  the  sequence will be 0,1,2,3
+3. run the  app.py script
+4. press K to enable the training mode
+5. start capturing the image data by pressing the sequence  number  of the gesture.
+6. image data can be found in the file keypoint.csv
+7. install jypyter extension in vscode
+8. go to  "keypoint_classification.ipynb". Search for this line "NUM_CLASSES = 6". Update it with  total number of gestures
+    If the sequence is 0,1,2,3 then total number would be  4
+9. select the kernal as env python 3.11
+10. click on "Run all" to train the model
+
+
