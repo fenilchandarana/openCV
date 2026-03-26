@@ -1,0 +1,9 @@
+install cmake and visual visual studio: Desktop development with C++
+
+install the libraries after creating envorinment
+pip install opencv-python
+pip install face_recognition
+
+image_comparison is for comparing two images
+main_video is for opening webcam and compare live face with image
+simple_facerec is a helper class for main_video
